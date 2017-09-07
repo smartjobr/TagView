@@ -247,7 +247,7 @@ public class TagView extends RelativeLayout {
             //add margin of each line
             tagParams.bottomMargin = lineMargin;
 
-            if (mWidth <= total + tagWidth + Utils.dipToPx(this.getContext(), Constants.LAYOUT_WIDTH_OFFSET)) {
+            if (mWidth <= total + tagWidth + Utils.dipToPx(this.getContext(), Constants.LAYOUT_WIDTH_OFFSET) + tagMargin) {
                 //need to add in new line
                 if (tagPre != null) tagParams.addRule(RelativeLayout.BELOW, indexBottom);
                 // initialize total param (layout padding left & layout padding right)
